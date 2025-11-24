@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Study Helper</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>AI Study Helper 📚🤖</h1>
+    <p class="subtitle">Paste any text and see a explanation.</p>
+
+    <textarea id="inputText" placeholder="Paste your paragraph or notes here..."></textarea>
+
+    <button id="explainBtn">Explain</button>
+
+    <div id="loading" class="hidden">Thinking...</div>
+
+    <div id="results" class="hidden">
+      <div id="history" class="hidden">
+  <h2>Recent Explanations</h2>
+  <ul id="historyList"></ul>
+</div>
+
+      <h2>Simple Explanation</h2>
+      <p id="simpleExplanation"></p>
+
+      <h2>Bullet Summary</h2>
+      <ul id="bulletSummary"></ul>
+    </div>
+
+    <p id="error" class="error hidden"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
